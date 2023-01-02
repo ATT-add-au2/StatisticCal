@@ -23,18 +23,14 @@ public class Unit_test_statutils {
      */
     public static void main(String[] args) {
         // TODO code application logic here
-        double sum = 0;
         List<Double> exampleData = Arrays.asList(1., 1., 3., 2., 1., 2., 1., 3., 2., 3., 10., 99., -2.);
-        for (Iterator<Double> it = exampleData.iterator(); it.hasNext(); ) {
-            sum = sum + it.next();
-        }
 
         //System.out.println(sum/exampleData.size());
         Statutils mm = new Statutils(exampleData);
-        mm.calc();
-        System.out.println(mm.mean());
-        System.out.println(Collections.max(exampleData));
-        System.out.println(Collections.min(exampleData));
+
+        System.out.println("平均值: " + mm.mean());
+        System.out.println("最大值: " + Collections.max(exampleData));
+        System.out.println("最小值: " + Collections.min(exampleData));
 
         exampleData.stream();
 
@@ -51,13 +47,8 @@ public class Unit_test_statutils {
 
 
         //计算母体方差，和母体标准差
-        double s2 = 0;
-        for (Iterator<Double> it = exampleData.iterator(); it.hasNext(); ) {
-            //sum=sum+it.next();
-            s2 = Math.pow((it.next() - mm.calc()), 2);
-        }
-        System.out.println(s2 / size);
-        System.out.println(Math.sqrt(s2 / size));
+        System.out.println("方差: " + mm.variance());
+        System.out.println("标准差: " + mm.standardDeviation());
 
         //计算bin的宽度 task 2b
         SturgesFormula sturgesinstance = new SturgesFormula(exampleData);
