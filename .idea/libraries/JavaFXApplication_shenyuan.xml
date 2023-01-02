@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="JavaFXApplication_shenyuan">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/dist/JavaFXApplication_shenyuan.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
