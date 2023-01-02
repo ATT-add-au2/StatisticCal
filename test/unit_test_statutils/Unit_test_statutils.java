@@ -29,8 +29,9 @@ public class Unit_test_statutils {
         Statutils mm = new Statutils(exampleData);
 
         System.out.println("平均值: " + mm.mean());
-        System.out.println("最大值: " + Collections.max(exampleData));
-        System.out.println("最小值: " + Collections.min(exampleData));
+        System.out.println("最大值: " + mm.max());
+        System.out.println("最小值: " + mm.min());
+        System.out.println("总和: " + mm.sum());
 
         exampleData.stream();
 
