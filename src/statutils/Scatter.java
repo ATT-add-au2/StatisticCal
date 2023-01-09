@@ -1,15 +1,8 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package statutils;
 
 import java.util.*;
 
-/**
- * @author kezhang This part calculates the variance and standard deviation
- */
 public class Scatter {
 
     private double mean;

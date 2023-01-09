@@ -1,20 +1,11 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package mathutils;
 
 import statutils.*;
 import binmethod.*;
-
 import java.util.*;
-
 import org.apache.commons.math3.fitting.*;
 
-/**
- * @author kezhang This part calculates the parameters of PDF.
- */
 public class Mathutils {
 
     private NormalisedFreqCalculator NormalisedFreqInstance;

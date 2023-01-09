@@ -1,23 +1,13 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package javafxapplication_shenyuan;
 
 import javafx.scene.chart.BarChart;
 import javafx.scene.chart.XYChart;
 import binmethod.*;
-
 import java.util.Collections;
-
 import javafx.scene.chart.LineChart;
 import statutils.*;
 
-/**
- * @author kezhang This part draws the bar chart and the line chart according to
- * user's dataset
- */
 public class ChartRenderer {
 
     /*
@@ -50,7 +40,6 @@ public class ChartRenderer {
         BinInfo b = new BinInfo(binmethod, IOOperation.getInputData());
         double[] binindex = b.getBinIndex();
         double[] binContent = b.getBinContent(binindex);
-
         double[] normalisedFreq = new double[binmethod.calcNumOfBins()];
         double denominator = 0.;
         for (int i = 0; i < binmethod.calcNumOfBins() - 1; i++) {

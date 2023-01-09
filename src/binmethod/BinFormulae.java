@@ -1,23 +1,14 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package binmethod;
 
 import java.util.*;
 
-/**
- * @author kezhang
- * abstract BinFormulae--->
- * --->
- * --->
- */
 public abstract class BinFormulae {
     //parameter declariation
 
-    private List<Double> exampleData;
     private int NumOfBins;
+    private List<Double> exampleData;
+    
 
     //abstract constructer
     public BinFormulae(List<Double> _exampleData) {
